@@ -1,0 +1,92 @@
+.cac {
+  width: 100%;
+}
+
+.cac__grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--cac-min-column-width, 220px)), 1fr)
+  );
+  gap: 8px;
+  align-items: start;
+}
+
+.cac__card {
+  min-width: 0;
+  text-align: center;
+}
+
+.cac__title {
+  overflow: hidden;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cac__values {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.cac__metric + .cac__metric {
+  margin-top: 6px;
+}
+
+.cac__value {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.cac__value--combined {
+  font-size: 34px;
+}
+
+.cac__label {
+  margin-top: 3px;
+  font-size: 13px;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.cac--error {
+  color: #ff6565;
+  font-size: 18px;
+}
+
+.cac__warning {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+/* Shared maintenance notices sit below the grid and remain deliberately smaller
+ * than countdown labels so an update warning does not dominate mirror content. */
+.cac__source-health {
+  margin-top: 8px;
+  font-size: 11px;
+  line-height: 1.25;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .cac__grid {
+    gap: 6px;
+  }
+
+  .cac__title {
+    font-size: 22px;
+  }
+
+  .cac__value,
+  .cac__value--combined {
+    font-size: 32px;
+  }
+}

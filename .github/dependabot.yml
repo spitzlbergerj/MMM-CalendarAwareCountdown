@@ -1,0 +1,12 @@
+version: 2
+updates:
+  # Dependabot proposes reviewed dependency changes. The running mirror never
+  # executes npm update on its own, so a new holiday-rule package first passes
+  # this repository's tests and normal release process.
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"

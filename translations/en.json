@@ -1,0 +1,23 @@
+{
+  "LOADING": "Calculating countdowns …",
+  "CONFIG_ERROR": "Invalid configuration",
+  "CALENDAR_DAYS": "Calendar days",
+  "WORKDAYS": "Working days",
+  "MONDAYS": "Mondays",
+  "WEEKDAYS": "Weekdays",
+  "DAYS_SHORT": "d",
+  "HOURS_SHORT": "h",
+  "MINUTES_SHORT": "m",
+  "SECONDS_SHORT": "s",
+  "LOCATION_FALLBACK": "Municipality-level holidays unavailable:",
+  "SOURCE_MAINTENANCE": "Source check",
+  "SOURCE_DATE_HOLIDAYS_PACKAGE": "Holiday library",
+  "SOURCE_DATE_HOLIDAYS_REPOSITORY": "date-holidays repository",
+  "SOURCE_BAVARIA_MUNICIPALITIES": "Bavarian municipality data",
+  "SOURCE_REPOSITORY_INACTIVE": "repository is archived or disabled",
+  "SOURCE_REPOSITORY_STALE": "no repository activity for",
+  "SOURCE_UPDATE_AVAILABLE": "reviewed update required",
+  "SOURCE_CHECK_UNAVAILABLE": "check currently unavailable",
+  "SOURCE_CHECK_INVALID": "source returned invalid verification data",
+  "SOURCE_DAYS": "days"
+}

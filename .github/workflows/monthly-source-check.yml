@@ -1,0 +1,40 @@
+name: Monthly source check
+
+on:
+  # The fixed UTC schedule is intentionally offset from the top of the hour,
+  # when shared GitHub Actions capacity is commonly busiest.
+  schedule:
+    - cron: "17 6 1 * *"
+  # Maintainers can repeat the exact same source check before a release.
+  workflow_dispatch:
+
+# The workflow only reads repository content. It cannot commit downloaded data,
+# publish a package, or silently modify a release.
+permissions:
+  contents: read
+
+jobs:
+  verify-sources:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Use supported Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      # npm ci installs exactly the versions recorded in package-lock.json. This
+      # verifies the released dependency set rather than silently updating it.
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Run syntax and calculation tests
+        run: npm run check
+
+      # A non-current, invalid, or unreachable source fails the job so GitHub's
+      # normal Actions notification mechanism brings it to maintainer attention.
+      - name: Compare maintained sources
+        run: npm run check:sources

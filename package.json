@@ -1,0 +1,45 @@
+{
+  "name": "mmm-calendarawarecountdown",
+  "version": "1.0.2",
+  "description": "Calendar-aware multi-countdowns for MagicMirror²",
+  "main": "node_helper.js",
+  "homepage": "https://github.com/spitzlbergerj/MMM-CalendarAwareCountdown#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spitzlbergerj/MMM-CalendarAwareCountdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spitzlbergerj/MMM-CalendarAwareCountdown/issues"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "NOTICE.md",
+    "MMM-CalendarAwareCountdown.css",
+    "MMM-CalendarAwareCountdown.js",
+    "data/",
+    "docs/screenshots/",
+    "lib/",
+    "node_helper.js",
+    "scripts/",
+    "translations/"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check MMM-CalendarAwareCountdown.js && node --check node_helper.js && node --test",
+    "check:sources": "node scripts/check-data-sources.js",
+    "update:bavaria-municipalities": "node scripts/update-bavaria-municipalities.js"
+  },
+  "keywords": [
+    "magicmirror",
+    "countdown",
+    "working-days",
+    "public-holidays"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "date-holidays": "3.37.0"
+  }
+}

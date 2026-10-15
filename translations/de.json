@@ -1,0 +1,23 @@
+{
+  "LOADING": "Countdowns werden berechnet …",
+  "CONFIG_ERROR": "Konfiguration fehlerhaft",
+  "CALENDAR_DAYS": "Kalendertage",
+  "WORKDAYS": "Arbeitstage",
+  "MONDAYS": "Montage",
+  "WEEKDAYS": "Wochentage",
+  "DAYS_SHORT": "T",
+  "HOURS_SHORT": "Std",
+  "MINUTES_SHORT": "Min",
+  "SECONDS_SHORT": "Sek",
+  "LOCATION_FALLBACK": "Gemeindeebene für Feiertage nicht verfügbar:",
+  "SOURCE_MAINTENANCE": "Quellenprüfung",
+  "SOURCE_DATE_HOLIDAYS_PACKAGE": "Feiertagsbibliothek",
+  "SOURCE_DATE_HOLIDAYS_REPOSITORY": "date-holidays-Repository",
+  "SOURCE_BAVARIA_MUNICIPALITIES": "Bayerische Gemeindedaten",
+  "SOURCE_REPOSITORY_INACTIVE": "Repository ist archiviert oder deaktiviert",
+  "SOURCE_REPOSITORY_STALE": "keine Repository-Aktivität seit",
+  "SOURCE_UPDATE_AVAILABLE": "geprüfte Aktualisierung erforderlich",
+  "SOURCE_CHECK_UNAVAILABLE": "Prüfung derzeit nicht erreichbar",
+  "SOURCE_CHECK_INVALID": "Quelle liefert keine gültigen Prüfdaten",
+  "SOURCE_DAYS": "Tagen"
+}

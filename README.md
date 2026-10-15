@@ -656,4 +656,3 @@ source and scope. Third-party JavaScript dependencies retain their own licenses.
 ## License
 
 MIT
-

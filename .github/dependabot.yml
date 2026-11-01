@@ -8,5 +8,5 @@ updates:
     schedule:
       interval: "monthly"
     open-pull-requests-limit: 5
-    labels:
-      - "dependencies"
+    # No custom label is configured here. GitHub rejects labels that do not
+    # already exist, while Dependabot's default metadata works without one.

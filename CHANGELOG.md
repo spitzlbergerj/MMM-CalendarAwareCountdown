@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented here.
 
+## 1.0.3 - 2026-11-01
+
+- Update `date-holidays` from 3.37.0 to 3.38.0 after validating the holiday
+  sources, all automated tests, and the release package
+- Refresh the transitive dependency lock data included with `date-holidays`
+- Remove the undeclared custom Dependabot label so future update proposals are
+  created without a label warning
+
 ## 1.0.2 - 2026-10-15
 
 - Add the relevant module configuration below every screenshot
